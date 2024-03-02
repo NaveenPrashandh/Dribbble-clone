@@ -1,0 +1,629 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  /* background-color: rgba(0, 0, 0, 0.578); */
+}
+
+.header{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding-top:  40px;
+  padding-left: 10px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.left-section{
+  width: 600px;
+ 
+}
+.left-section li{
+  display: inline-block;
+  padding: 0 16px;
+}
+
+.left-section a{
+  text-decoration: none;
+  color: rgba(33, 31, 31, 0.893)
+}
+
+.left-section a:hover{
+  color: black;
+  cursor: pointer;
+}
+.middle-section img{
+height: 60px;
+width: 80px;
+margin-left: -80px;
+margin-top: -20px;
+}
+
+
+.right-section{
+ margin-right: 20px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+justify-content: space-around;
+
+}
+
+.searchrs{
+  border: none;
+  height: 37px;
+  max-width: 200px;
+  flex: 1;
+  width: 0;
+  margin-left: -40px;
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.searchrs:focus{
+  outline: none;
+}
+
+.search-bar-image{
+  height: 23px;
+  width: 23px;
+  
+}
+
+.login{
+  background-color: white;
+  color: rgb(63, 62, 77);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login:hover{
+  color:rgba(149, 148, 157, 0.878) ;
+}
+
+.signup{
+  background-color: rgb(13, 12, 34);
+  border-width: 0.8px;
+  font-size: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+  color: rgb(255,255,255);
+  transition: 0.15s;
+  cursor: pointer;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 23px;
+  transition: opacity 1s;
+  
+}
+
+.signup:hover{
+  opacity: 0.8;
+
+}
+
+.content{
+  margin-top: 80px;
+  height: 200px;
+ 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.homepage{
+width: 70%;
+  position: absolute;
+  left: 7%;
+  margin: 30px;
+ }
+
+ .homepage h1{
+  width: auto;
+ }
+
+ .middle-content{
+  position: absolute;
+  left:13%;
+  top: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  width: 80%;
+  justify-content: space-between;
+  
+
+  
+ }
+
+ .first-content{
+  display: flex;
+  align-items: center;
+  
+ 
+  }
+
+.img-claudia{
+ height: 60px;
+ width: 60px;
+ border-radius: 60%;
+margin-right: 10px;
+}
+
+
+
+.for{
+  margin: 0 4px;
+}
+
+.follow{
+  margin-left: 5px;
+  font-size: 14px;
+  color: rgb(159, 149, 149);
+}
+
+.desc{
+  margin-left: 4px;
+      color: rgb(35, 136, 35)}
+
+
+.aside{
+  position: absolute;
+  right: 0;
+}
+
+.feedback,.share,.details{
+  padding: 15px 0;
+}
+
+.ftt,.stt,.dtt
+{
+  visibility: hidden;
+  position: absolute;
+  right: 12px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.832);
+  box-shadow: 1px 1px 8px black;
+  color: white;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.feedback:hover .ftt
+{
+  visibility: visible;
+}
+
+.share:hover .stt
+{
+  visibility: visible;
+}
+
+.details:hover .dtt
+{
+  visibility: visible;
+}
+
+.secondcontent{
+  float: left;
+  margin-right: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+svg{
+  cursor: pointer;
+}
+
+.svgicon,.bookmark-image-container,.git-container{
+  position: relative;
+ bottom: 1px;
+  
+}
+
+.lts,.saveshot,.githover{
+  position: absolute;
+  font-size: small;
+  bottom: -40px;
+  background-color: rgba(0, 0, 0, 0.832);
+  box-shadow: 1px 1px 8px black;
+  color: white;
+  padding: 6px 8px;
+  opacity: 0;
+  visibility: hidden;
+  white-space: nowrap;
+}
+
+.svgicon:hover .lts{
+  opacity: 1;
+  visibility: visible;
+}
+
+.bookmark-image-container:hover .saveshot{
+  opacity: 1;
+  visibility: visible;
+}
+
+.git-container:hover .githover{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+.bookmark-image{
+  cursor: pointer;
+}
+
+.git{
+ padding: 10px 15px;
+  background-color: rgb(13, 12, 34);
+  cursor: pointer;
+  color: white;
+  border-radius: 30px;
+border: none;
+
+}
+
+.git:hover{
+  opacity: 0.8;
+  transition:  0.30s;
+}
+
+.overall
+{
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.video-preview
+{
+  height: 500px;
+  width:1180px;
+   /* position: absolute;
+  left: 13%;  */
+} 
+
+
+ .video-preview video
+{
+  height: 700px;       /* Your desired height in pixels or any other valid CSS unit */
+  width: 100%;         /* Allow the width to adjust proportionally */
+  object-fit: fill; 
+  border-radius: 20px;
+}   
+
+
+
+.space
+{
+  height: 200px;
+  width: 300px;
+}
+
+.bottom-text
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0 300px;
+  margin-top: 50px;
+}
+
+.bottom-text p
+{
+  margin: 0;
+  padding: 0;
+}
+
+.bt{
+  font-size: 20px;
+}
+
+#bt-first{
+  margin: 20px 0;
+}
+
+#bt-second{
+  margin: 20px 0;
+}
+
+.services{
+  font-size: larger;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+ ul{
+  list-style-type: none;
+  padding: 0 !important;
+  margin: 0  !important ;
+}
+
+.space
+{
+  height: 10px;
+}
+
+#bt-link a 
+{
+  color: inherit; 
+  text-decoration: none;
+  border-bottom: 2px solid red; 
+  padding-bottom: 2px; 
+}
+
+.overall2
+{
+  width: 500px;
+  display: flex;
+  justify-content: start;
+  margin: 50px 0;
+  margin-left: 350px;
+  padding: 0;
+}
+
+.rebound-of-container
+{
+  display: flex;
+}
+
+.rebound-details-container
+{
+  margin-left: 20px;
+}
+
+.bo-img{
+  display: flex;
+  justify-content: center;
+}
+
+.none{
+  margin-bottom: 70px;
+}
+
+.overall3{
+  
+  display: flex;
+  justify-content: center;
+}
+
+.bo-img{
+  height: 70px;
+  width: 50px;
+  margin-bottom: 8px;
+}
+
+.inner
+{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bruno{
+  font-size: larger;
+  font-weight: 500;
+}
+
+.inner-p{
+  background-color: rgb(240, 208, 170);
+  border-radius: 3px;
+  width: 350px;
+}
+
+/* ----------------------------------------------- */
+
+.overall4
+{
+  
+  margin: 10px 200px;
+  position: relative;
+  border-radius: 5px;
+
+}
+
+.inner1 p,.topic{
+  cursor: pointer;
+}
+
+.inner1
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner2
+{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+}
+
+.inner2 img
+{
+  border-radius: 3px;
+  width: 100%; 
+  height: auto;
+}
+
+/* .inner2 img:hover
+{
+  cursor: pointer;
+  box-shadow: inset 0em -5em gold;
+} */
+
+.bline
+{
+  display: grid;
+  width: 270px;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+  position: absolute;
+  bottom: 4px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  box-shadow:inset  0 -3em rgba(0, 0, 0, 0.274); 
+}
+
+.line
+{
+  width: 270px;        /* line 273px */
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.innerline
+{
+  display: flex;
+}
+
+/* Show .bline when .inner2 is hovered */
+.inner2 img:hover + .bline {
+  opacity: 1;
+  
+}
+
+/* Show .bline when .inner3 is hovered */
+.inner3 img:hover + .bline {
+  opacity: 1;
+}
+
+/* Show .bline when .inner4 is hovered */
+.inner4 img:hover + .bline {
+  opacity: 1;
+}
+
+/* Show .bline when .inner5 is hovered */
+.inner5 img:hover + .bline {
+  opacity: 1;
+}
+
+/* .inner2:hover + .bline,
+.bline:hover
+{
+ opacity: 1;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); Stylish box shadow */
+  
+/* } */ 
+
+.line p
+{
+  padding-top: 10px;
+  padding-left: 10px;
+  color: rgb(231, 227, 218);
+  font-weight: bold;
+}
+.round
+{
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: white;
+  margin: 5px;
+}
+
+
+.round img
+{
+  height: 20px;
+  width: 20px;
+  padding-bottom: 3px;
+}
+
+/* ------------------------------------------------------- */
+
+
+.last-sec{
+  margin-top:120px; ;
+  display: flex;
+  justify-content: center;
+ margin-bottom: 90px;
+}
+
+.end{
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+  margin: 0 200px;
+}
+.logo{
+  height: 60px;
+width: 90px;
+}
+
+.endmid-sec .endlist{
+  display: inline-block;
+  padding: 0 13px;
+}
+
+.endlist a{
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.endlist a:hover{
+  color: black;
+}
+
+
+.logos img{
+  margin: 0 5px;
+}
+
+.end-two{
+  margin-top: 100px;
+  
+}
+
+.end-sec{
+  display: flex;
+  margin: 0 200px;
+  justify-content: space-between;
+  
+}
+
+.endsec1 .endlist1{
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 14px;
+  cursor: pointer;
+  color: gray;
+}
+
+.endsec2{
+  margin-bottom: 50px;
+}
+
+.endsec2 .endlist2{
+  display: inline-block;
+  padding: 0 13px;
+  cursor: pointer;
+  color: gray;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
